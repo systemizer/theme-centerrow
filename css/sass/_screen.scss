@@ -666,6 +666,18 @@ footer {
     float: right;
 }
 
+.browse .record-container {
+    display: flex;
+    width: 100%;
+}
+.browse .record-container .facets {
+    width: 25%;
+}
+
+.browse .records {
+    flex: 1;
+}
+
 .browse .records,
 #collection-items {
     display: flex;

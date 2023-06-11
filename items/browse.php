@@ -26,30 +26,35 @@ $sortLinks[__('Date Added')] = 'added';
 
 <?php endif; ?>
 
-<div class="records">
-    <?php foreach (loop('items') as $item): ?>
-    <div class="item hentry">
-        <div class="item-meta">
-        <?php if (metadata('item', 'has files')): ?>
-        <div class="item-img">
-            <?php echo link_to_item(item_image()); ?>
-        </div>
-        <?php endif; ?>
+<div class="record-container">
+    <div class="facets">
+        <?php echo get_specific_plugin_hook_output('Facets', 'public_facets', array('view' => $this)); ?>
+    </div>
+    <div class="records">
+        <?php foreach (loop('items') as $item): ?>
+        <div class="item hentry">
+            <div class="item-meta">
+            <?php if (metadata('item', 'has files')): ?>
+            <div class="item-img">
+                <?php echo link_to_item(item_image()); ?>
+            </div>
+            <?php endif; ?>
 
-        <h2><?php echo link_to_item(null, array('class'=>'permalink')); ?></h2>
+            <h2><?php echo link_to_item(null, array('class'=>'permalink')); ?></h2>
 
-        <?php if ($creator = metadata('item', array('Dublin Core', 'Creator'))): ?>
-        <span class="creator"><?php echo $creator; ?></span>
-        <?php endif; ?>
-        <?php if ($date = metadata('item', array('Dublin Core', 'Date'))): ?>
-        <span class="date"><?php echo $date; ?></span>
-        <?php endif; ?>
+            <?php if ($creator = metadata('item', array('Dublin Core', 'Creator'))): ?>
+            <span class="creator"><?php echo $creator; ?></span>
+            <?php endif; ?>
+            <?php if ($date = metadata('item', array('Dublin Core', 'Date'))): ?>
+            <span class="date"><?php echo $date; ?></span>
+            <?php endif; ?>
 
-        <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
+            <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
 
-        </div><!-- end class="item-meta" -->
-    </div><!-- end class="item hentry" -->
-    <?php endforeach; ?>
+            </div><!-- end class="item-meta" -->
+        </div><!-- end class="item hentry" -->
+        <?php endforeach; ?>
+    </div>
 </div>
 
 <?php echo pagination_links(); ?>

@@ -522,8 +522,7 @@ input[type=email],
 input[type=search],
 input[type=number],
 input[type=month] {
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     border: 1px solid;
     font-size: 18px;
     line-height: 24px;
@@ -1081,6 +1080,22 @@ nav ul {
 @media screen {
   #sort-links {
     float: right;
+  }
+}
+@media screen {
+  .browse .record-container {
+    display: flex;
+    width: 100%;
+  }
+}
+@media screen {
+  .browse .record-container .facets {
+    width: 25%;
+  }
+}
+@media screen {
+  .browse .records {
+    flex: 1;
   }
 }
 @media screen {
