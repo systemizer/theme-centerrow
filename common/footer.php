@@ -11,8 +11,14 @@
         <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>
         <p><?php echo $copyright; ?></p>
         <?php endif; ?>
-        <nav id="bottom-nav"><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
-        <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
+        <nav id="bottom-nav">
+            <ul class="navigation">
+                <li><a href="/">The FWWCP Digital Collection</a></li>
+                <li><a href="/about">About the Project</a></li>
+                <li><a href="/contact">Contact</a></li>
+
+            </ul>
+	    </nav>
 
     </div><!-- end footer-content -->
 

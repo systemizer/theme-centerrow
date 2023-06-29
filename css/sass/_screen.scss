@@ -8,15 +8,11 @@ html {
 }
 
 a {
-    color: $red;
-    text-decoration: underline;
-
-    &:hover {
-        text-decoration: double underline;
-    }
+    color: $black;
+    text-decoration: none;
 
     &:focus {
-        border: solid 1px $red;
+        border: solid 1px $black;
     }
 }
 
@@ -226,6 +222,7 @@ input[type="submit"] {
 nav .navigation,
 nav ul {
     @include de-list;
+    font-family: avenir;
 }
 
 .item-pagination.navigation {
@@ -251,7 +248,7 @@ nav ul {
     padding-bottom: (.5 * $base-line-height);
 
     &.active a {
-        color: $red;
+        color: $black;
     }
 }
 
@@ -277,15 +274,18 @@ nav ul {
     }
 }
 
+header #top-nav-container {
+    display: flex;
+    align-items: center;
+}
+
 header nav .navigation {
     list-style-type: none;
     padding: ((.25 * $base-line-height) - 1px) 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid $gray;
-    border-width: 1px 0;
-    margin: $base-line-height 0;
+    margin: $base-line-height $base-line-height;
 }
 
 header nav li {
@@ -294,14 +294,14 @@ header nav li {
 }
 
 header nav a {
-    font-size: .875 * $base-font-size;
+    font-size: 1.25 * $base-font-size;
+    font-weight: 700;
 }
 
 #site-title {
     font-size: 1.5 * $base-font-size;
     text-transform: uppercase;
     letter-spacing: .125em;
-    margin: (2 * $base-line-height) 0 0;
 }
 
 #site-title a {
@@ -476,6 +476,11 @@ header nav ul {
     padding: (.25 * $base-line-height) (.5 * $base-line-height);
     margin: 0 0 -1px 0;
     border: 1px solid transparent;
+
+    /* Custom Styles */
+    color: $black;
+    text-decoration: none;
+    /* End Custom Styles */
 }
 
 /* focus/open states of first descendant link within a top level 
@@ -503,18 +508,6 @@ header nav > ul > li > .sub-nav-toggle {
     z-index: 1;
 }
 
-.nav-menu > .nav-item > [role="button"]:after {
-    content: "\00A0\00A0\f0da";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    display: inline-block;
-    width: $base-line-height;
-}
-
-.nav-menu > .nav-item > [aria-expanded="true"]:after {
-    content: "\00A0\00A0\f0d7";
-}
-
 a.parent {
     font-weight: bold;
 }
@@ -530,16 +523,16 @@ a.parent:after {
     border: 1px solid #dedede;
     border-width: 1px 0;
     background-color: #fff;
+
+    a {
+	font-size: .875 * $base-font-size;
+    }
     
     &.first {
         max-width: 100%;
         margin: 0 auto;
         padding: 0 (.5 * $base-line-height);
     }
-}
-
-.first.open.sub-nav > ul > li > ul > li {
-    width: 25%;
 }
 
 .first.open.sub-nav ul ul ul {
@@ -558,6 +551,7 @@ a.parent:after {
 .open.sub-nav ul {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     left: 0;
     right: 0;
     z-index: 999;
@@ -588,18 +582,9 @@ a.parent:after {
     }
 
     li a:not(.parent) {
-        padding-left: $base-line-height;
-        text-indent: -$base-line-height;
         display: inline-block;
     }
 
-    li a:not(.parent):before {
-        content: "\25C6";
-        display: inline-block;
-        width: $base-line-height;
-        margin-right: (-.125 * $base-line-height);
-        text-indent: 0;
-    }
 }
 
 .sub-nav .sub-nav-toggle {
@@ -620,14 +605,33 @@ a.parent:after {
 /* @group ----- Footer ----- */
 
 footer {
+    padding: (.25 * $base-line-height);
+    background-color: $black2;
     margin-top: (2 * $base-line-height);
     clear: both;
+
+    #footer-content {
+	a {
+	    color: $white;
+	    font-family: avenir;
+	}
+    }
 }
 
+#bottom-nav ul {
+    text-align: center;
+}
 #bottom-nav li {
     display: inline-block;
-    margin-right: 1em;
+    padding: 0em 1em 0em 1em;
+    
     font-size: .875 * $base-font-size;
+
+    border-right: solid thin $white;
+
+    &:last-child {
+	border-right: none;
+    }
 }
 
 /* @end */
@@ -653,7 +657,7 @@ footer {
     }
 
     .sorting a {
-        color: $red;
+        color: $black;
     }
 }
 
@@ -1031,7 +1035,7 @@ footer {
 }
 
 #exhibit-pages .current a {
-    color: $red;
+    color: $black;
 }
 
 #exhibit-pages > ul > li:not(:last-of-type) {
