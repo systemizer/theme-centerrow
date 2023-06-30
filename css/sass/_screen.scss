@@ -1060,4 +1060,109 @@ footer {
     margin-bottom: 0;
 }
 
+#homepage-text-block {
+    color: $black;
+    display: flex;
+    align-items: center;
+
+    #learn-more {
+	text-align: center;
+	width: 400px;
+	padding: $base-line-height;
+    }
+    
+    h1 {
+	font-family: helvetica;
+	font-size: 75px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: $base-line-height * .5;
+    }
+    
+    h2 {
+	font-family: helvetica;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: $base-line-height * .5;
+    }
+
+    button {
+	color: $white;
+	background-color: $red;
+	font-size: 22px;
+	font-family: arial;
+	font-weight: bold;
+	padding: ($base-line-height * .5) $base-line-height;
+	border-radius: $base-line-height * .25;
+    }
+}
+
+#getting-started-block {
+    background-color: $black3;
+    font-family: arial;
+    padding: $base-line-height $base-line-height * 2;
+    
+    h2 {
+	margin: 0;
+	color: $white;
+	font-size: 40px;
+	font-weight: bold;
+    }
+    
+    #getting-started-options {
+
+	.getting-started-option {
+	    padding: $base-line-height;
+	}
+	
+	display: flex;
+	align-items: center;
+	h3 {
+	    text-align: center;
+	    margin-top: 0;
+	    font-size: 25px;
+	    font-weight: normal;
+	    color: $white;
+	}
+    }
+}
+
+#why-use-these-collections-block {
+    font-family: arial;
+    padding: $base-line-height $base-line-height * 2;
+    
+    h2 {
+	color: $black;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+    }
+
+    button {
+	color: $white;
+	background-color: $red;
+	font-size: 22px;
+	font-family: arial;
+	font-weight: bold;
+	padding: ($base-line-height * .5) $base-line-height;
+	border-radius: $base-line-height * .25;
+    }
+
+    #testimonial-container {
+	display: flex;
+	align-items: center;
+
+	.testimonial {
+	    padding: $base-line-height;
+	}
+    }
+
+    #watch-more-container {
+	text-align: center;
+    }
+    
+}
+
 /* @end */
+

@@ -1496,6 +1496,99 @@ nav ul {
     margin-bottom: 0;
   }
 }
+@media screen {
+  #homepage-text-block {
+    color: #1c1d23;
+    display: flex;
+    align-items: center;
+  }
+  #homepage-text-block #learn-more {
+    text-align: center;
+    width: 400px;
+    padding: 24px;
+  }
+  #homepage-text-block h1 {
+    font-family: helvetica;
+    font-size: 75px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  #homepage-text-block h2 {
+    font-family: helvetica;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  #homepage-text-block button {
+    color: #FFFFFF;
+    background-color: #700409;
+    font-size: 22px;
+    font-family: arial;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+  }
+}
+@media screen {
+  #getting-started-block {
+    background-color: #343e47;
+    font-family: arial;
+    padding: 24px 48px;
+  }
+  #getting-started-block h2 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  #getting-started-block #getting-started-options {
+    display: flex;
+    align-items: center;
+  }
+  #getting-started-block #getting-started-options .getting-started-option {
+    padding: 24px;
+  }
+  #getting-started-block #getting-started-options h3 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: normal;
+    color: #FFFFFF;
+  }
+}
+@media screen {
+  #why-use-these-collections-block {
+    font-family: arial;
+    padding: 24px 48px;
+  }
+  #why-use-these-collections-block h2 {
+    color: #1c1d23;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+  }
+  #why-use-these-collections-block button {
+    color: #FFFFFF;
+    background-color: #700409;
+    font-size: 22px;
+    font-family: arial;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+  }
+  #why-use-these-collections-block #testimonial-container {
+    display: flex;
+    align-items: center;
+  }
+  #why-use-these-collections-block #testimonial-container .testimonial {
+    padding: 24px;
+  }
+  #why-use-these-collections-block #watch-more-container {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 640px) {
   #site-title {
     text-align: center;
