@@ -76,20 +76,46 @@ queue_js_string('
   </div>
 </div>
 
+<div id="testimonials-container">
+  <div id="wrap">
+    <h2>TESTIMONIALS</h2>
+    <div id="testimonials">
+      <div class="testimonial">
+        <img width="250" height="375" src="http://fwwcpdigitalcollection.org/files/original/4248af7c7e7e109b6a10c8a25b1425f5.jpg" />
+        <h3>Roy Birch</h3>
+        <p>"The voices heard through the work of The Federation of Worker Writers, and its offspring, The FED, are <b><a href="/why-use-collections">those of the marginalised and the excluded, and they proclaim the poetry of difference</a></b>, and the right of that difference to full inclusion as a component of true social stability, and the right of all humans to express humanity, and, more importantly, to be heard and taken notice of. The archive of the FWWCP/The FED is potentially an extremely valuable mechanism for change through social education. The archive is essential."</p>
+        <i>past-Chair TheFED</i>
+      </div>
+      <div class="testimonial">
+        <img width="250" height="375" src="http://fwwcpdigitalcollection.org/files/original/4248af7c7e7e109b6a10c8a25b1425f5.jpg" />
+        <h3>John Malcomson</h3>
+        <p>"The publications comprising the FWWCP & TheFED archives are invaluable to students and researchers interested in working class writing. Working class writing is often overlooked, being as it so often can be: non-literary, sometimes misspelled and not infrequently ungrammatical. But having said this, <b><a href="/why-use-collections">the archive gives an enormous insight into working class lives and the views of people who are often marginalised.</a></b>"</p>
+        <i>Chair TheFED</i>
+      </div>
+      <div class="testimonial">
+        <img width="250" height="375" src="http://fwwcpdigitalcollection.org/files/original/4248af7c7e7e109b6a10c8a25b1425f5.jpg" />
+        <h3>Nick Pollard</h3>
+        <p>"There are <b><a href="/why-use-collections">thousands of voices and testimonies, poems, short stories and anecdotes from communities across the UK</a></b>, and it is an important record of the everyday lives of the generations living through the transitions leading to – and through – the advent of neoliberalism – as imagined, recorded, written, published and distributed by themselves – and no-one else!"</p>
+        <i>Heeley Writers (1980-2007) <br> Hackney Writers (1982-3) <br> Pecket Well Learning Community (2010-14) <br> Occupational Therapy without Borders (reciprocal member 2005-7) <br> Federation Editor (1991-2007) <br> Federation exec member (1985-8; 1991-2007)</i>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div id="why-use-these-collections-block">
   <div id="wrap">
     <h2>WHY USE THESE COLLECTIONS</h2>
-    <div id="testimonial-container">
-      <div class="testimonial">
+    <div id="why-use-container">
+      <div class="why-use">
       <iframe width="475" height="300" src="https://www.youtube.com/embed/a4rGtt3EWVM?clip=Ugkx1HMAuSLZ0LEFH2dY9uHg4qN77YFfTgXd&amp;clipt=EMPHORin2jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-      <div class="testimonial">
+      <div class="why-use">
         <iframe width="475" height="300" src="https://www.youtube.com/embed/1qQ0XUz26yY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     <div id="watch-more-container">
-      <a href="why-use-collections"><button>Watch More</button></a>
+      <a href="/why-use-collections"><button>Watch More</button></a>
     </div>
   </div>
 </div>
