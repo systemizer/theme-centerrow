@@ -672,6 +672,7 @@ nav ul {
   header #top-nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   header nav .navigation {
@@ -696,6 +697,7 @@ nav ul {
   #site-title {
     font-size: 27px;
     text-transform: uppercase;
+    margin-right: 48px;
     letter-spacing: 0.125em;
   }
 
@@ -857,7 +859,6 @@ nav ul {
     list-style: none;
     display: inline-block;
     padding: 0;
-    margin: 0;
     height: 100%;
   }
 
@@ -1546,6 +1547,7 @@ nav ul {
   #getting-started-block #getting-started-options {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   #getting-started-block #getting-started-options .getting-started-option {
     padding: 24px;

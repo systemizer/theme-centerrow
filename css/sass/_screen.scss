@@ -277,6 +277,7 @@ nav ul {
 header #top-nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 header nav .navigation {
@@ -301,6 +302,7 @@ header nav a {
 #site-title {
     font-size: 1.5 * $base-font-size;
     text-transform: uppercase;
+    margin-right: 2 * $base-line-height;
     letter-spacing: .125em;
 }
 
@@ -465,7 +467,6 @@ header nav ul {
     list-style: none;
     display: inline-block;
     padding: 0;
-    margin: 0;
     height: 100%;
 }
 
@@ -1111,13 +1112,14 @@ footer {
     }
     
     #getting-started-options {
-
+	
 	.getting-started-option {
 	    padding: $base-line-height;
 	}
 	
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	h3 {
 	    text-align: center;
 	    margin-top: 0;
