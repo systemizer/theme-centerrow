@@ -405,6 +405,10 @@ textarea {
   /* 2 */
 }
 
+.timeline-timeline {
+  height: 750px !important;
+}
+
 @media screen {
   * {
     box-sizing: border-box;
