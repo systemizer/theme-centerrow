@@ -1065,6 +1065,7 @@ footer {
     color: $black;
     display: flex;
     align-items: center;
+    margin-bottom: $base-line-height;
 
     #learn-more {
 	text-align: center;
@@ -1130,42 +1131,6 @@ footer {
     }
 }
 
-#why-use-these-collections-block {
-    font-family: arial;
-    padding: $base-line-height $base-line-height * 2;
-    
-    h2 {
-	color: $black;
-	font-size: 40px;
-	font-weight: bold;
-	margin: 0;
-    }
-
-    button {
-	color: $white;
-	background-color: $red;
-	font-size: 22px;
-	font-family: arial;
-	font-weight: bold;
-	padding: ($base-line-height * .5) $base-line-height;
-	border-radius: $base-line-height * .25;
-    }
-
-    #why-use-container {
-	display: flex;
-	align-items: center;
-
-	.why-use {
-	    padding: $base-line-height;
-	}
-    }
-
-    #watch-more-container {
-	text-align: center;
-    }
-    
-}
-
 #testimonials-container {
     font-family: arial;
     padding: $base-line-height $base-line-height * 2;
@@ -1196,6 +1161,28 @@ footer {
 	    }
 	}
     }
+}
+
+.item-container {
+    display: flex;
+    align-items: top;
+
+    .item-metadata {
+	flex: 1;
+	padding: $base-line-height;
+    }
+
+    .item-document {
+	flex: 1;
+	padding: $base-line-height;
+    }
+}
+
+.actions-box {
+    background: $gray;
+    border: solid thin $black;
+    margin: $base-line-height;
+    padding: $base-line-height * 0.5;
 }
 
 /* @end */

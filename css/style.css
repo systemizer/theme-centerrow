@@ -1506,6 +1506,7 @@ nav ul {
     color: #1c1d23;
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
   }
   #homepage-text-block #learn-more {
     text-align: center;
@@ -1565,37 +1566,6 @@ nav ul {
   }
 }
 @media screen {
-  #why-use-these-collections-block {
-    font-family: arial;
-    padding: 24px 48px;
-  }
-  #why-use-these-collections-block h2 {
-    color: #1c1d23;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0;
-  }
-  #why-use-these-collections-block button {
-    color: #FFFFFF;
-    background-color: #700409;
-    font-size: 22px;
-    font-family: arial;
-    font-weight: bold;
-    padding: 12px 24px;
-    border-radius: 6px;
-  }
-  #why-use-these-collections-block #why-use-container {
-    display: flex;
-    align-items: center;
-  }
-  #why-use-these-collections-block #why-use-container .why-use {
-    padding: 24px;
-  }
-  #why-use-these-collections-block #watch-more-container {
-    text-align: center;
-  }
-}
-@media screen {
   #testimonials-container {
     font-family: arial;
     padding: 24px 48px;
@@ -1624,6 +1594,28 @@ nav ul {
   }
   #testimonials-container #testimonials .testimonial p {
     margin: 12px 0px;
+  }
+}
+@media screen {
+  .item-container {
+    display: flex;
+    align-items: top;
+  }
+  .item-container .item-metadata {
+    flex: 1;
+    padding: 24px;
+  }
+  .item-container .item-document {
+    flex: 1;
+    padding: 24px;
+  }
+}
+@media screen {
+  .actions-box {
+    background: #dedede;
+    border: solid thin #1c1d23;
+    margin: 24px;
+    padding: 12px;
   }
 }
 @media screen and (max-width: 640px) {
