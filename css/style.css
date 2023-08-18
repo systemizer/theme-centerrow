@@ -3,6 +3,8 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700';
 html {
   font-family: sans-serif;
   /* 1 */
@@ -409,13 +411,86 @@ textarea {
   height: 750px !important;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.homepage-block {
+  margin: 48px 0;
+  font-family: "Open Sans";
+}
+.homepage-block h1, .homepage-block h2, .homepage-block h3, .homepage-block h4, .homepage-block h5, .homepage-block h6 {
+  font-family: "Montserrat";
+}
+.homepage-block h1, .homepage-block h2, .homepage-block h3 {
+  font-weight: bold;
+}
+.homepage-block h4, .homepage-block h5, .homepage-block h6 {
+  font-weight: normal;
+}
+.homepage-block h1 {
+  font-size: 75px;
+}
+.homepage-block h2 {
+  font-size: 40px;
+}
+.homepage-block h3 {
+  font-size: 30px;
+}
+.homepage-block h4 {
+  font-size: 25px;
+}
+.homepage-block #learn-more {
+  text-align: center;
+  flex: 0 0 400px;
+}
+.homepage-block button {
+  color: #FFFFFF;
+  background-color: #700409;
+  font-size: 22px;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+.homepage-block .testimonial {
+  flex: 1;
+  padding: 24px;
+}
+.homepage-block .testimonial img {
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0px 3px 2px #dedede;
+}
+.homepage-block .getting-started-option {
+  flex: 1;
+}
+
+.homepage-block.inverted {
+  background-color: #343e47;
+}
+.homepage-block.inverted * {
+  color: #FFFFFF;
+}
+
+.actions-box {
+  background: #f0efef;
+  border: solid thin #1c1d23;
+  margin: 24px;
+  padding: 12px;
+}
+
 @media screen {
   * {
     box-sizing: border-box;
   }
 
   html {
-    font: 18px/24px "Crimson Text", serif;
+    font: 18px/24px "Open Sans", serif;
     color: #444;
   }
 
@@ -461,7 +536,7 @@ textarea {
     max-width: 1100px;
     margin: auto;
     position: relative;
-    padding: 0 24px;
+    padding: 0;
   }
 
   /* @end */
@@ -677,6 +752,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: solid 2px #1c1d23;
   }
 
   header nav .navigation {
@@ -1502,101 +1578,6 @@ nav ul {
   }
 }
 @media screen {
-  #homepage-text-block {
-    color: #1c1d23;
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
-  }
-  #homepage-text-block #learn-more {
-    text-align: center;
-    width: 400px;
-    padding: 24px;
-  }
-  #homepage-text-block h1 {
-    font-family: helvetica;
-    font-size: 75px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 12px;
-  }
-  #homepage-text-block h2 {
-    font-family: helvetica;
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 12px;
-  }
-  #homepage-text-block button {
-    color: #FFFFFF;
-    background-color: #700409;
-    font-size: 22px;
-    font-family: arial;
-    font-weight: bold;
-    padding: 12px 24px;
-    border-radius: 6px;
-  }
-}
-@media screen {
-  #getting-started-block {
-    background-color: #343e47;
-    font-family: arial;
-    padding: 24px 48px;
-  }
-  #getting-started-block h2 {
-    margin: 0;
-    color: #FFFFFF;
-    font-size: 40px;
-    font-weight: bold;
-  }
-  #getting-started-block #getting-started-options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #getting-started-block #getting-started-options .getting-started-option {
-    padding: 24px;
-  }
-  #getting-started-block #getting-started-options h3 {
-    text-align: center;
-    margin-top: 0;
-    font-size: 25px;
-    font-weight: normal;
-    color: #FFFFFF;
-  }
-}
-@media screen {
-  #testimonials-container {
-    font-family: arial;
-    padding: 24px 48px;
-  }
-  #testimonials-container h2 {
-    color: #1c1d23;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0;
-  }
-  #testimonials-container #testimonials {
-    display: flex;
-    align-items: flex-top;
-  }
-  #testimonials-container #testimonials .testimonial {
-    flex: 1;
-    padding: 24px;
-  }
-  #testimonials-container #testimonials .testimonial img {
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0px 3px 2px #dedede;
-  }
-  #testimonials-container #testimonials .testimonial h3 {
-    margin: 6px 0px;
-  }
-  #testimonials-container #testimonials .testimonial p {
-    margin: 12px 0px;
-  }
-}
-@media screen {
   .item-container {
     display: flex;
     align-items: top;
@@ -1608,14 +1589,6 @@ nav ul {
   .item-container .item-document {
     flex: 1;
     padding: 24px;
-  }
-}
-@media screen {
-  .actions-box {
-    background: #f0efef;
-    border: solid thin #1c1d23;
-    margin: 24px;
-    padding: 12px;
   }
 }
 @media screen and (max-width: 640px) {

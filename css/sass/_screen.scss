@@ -3,7 +3,7 @@
 }
 
 html {
-    font: #{$base-font-size}/#{$base-line-height} "Crimson Text", serif;
+    font: #{$base-font-size}/#{$base-line-height} $base-font-paragraph, serif;
     color: #444;
 }
 
@@ -56,7 +56,7 @@ img {image-orientation:from-image;}
     max-width: 1100px;
     margin: auto;
     position: relative;
-    padding: 0 $base-line-height;
+    padding: 0;
 }
 
 /* @end */
@@ -278,6 +278,7 @@ header #top-nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: solid 2px $black;
 }
 
 header nav .navigation {
@@ -1061,108 +1062,6 @@ footer {
     margin-bottom: 0;
 }
 
-#homepage-text-block {
-    color: $black;
-    display: flex;
-    align-items: center;
-    margin-bottom: $base-line-height;
-
-    #learn-more {
-	text-align: center;
-	width: 400px;
-	padding: $base-line-height;
-    }
-    
-    h1 {
-	font-family: helvetica;
-	font-size: 75px;
-	font-weight: bold;
-	margin-top: 0;
-	margin-bottom: $base-line-height * .5;
-    }
-    
-    h2 {
-	font-family: helvetica;
-	font-size: 30px;
-	font-weight: bold;
-	margin-top: 0;
-	margin-bottom: $base-line-height * .5;
-    }
-
-    button {
-	color: $white;
-	background-color: $red;
-	font-size: 22px;
-	font-family: arial;
-	font-weight: bold;
-	padding: ($base-line-height * .5) $base-line-height;
-	border-radius: $base-line-height * .25;
-    }
-}
-
-#getting-started-block {
-    background-color: $black3;
-    font-family: arial;
-    padding: $base-line-height $base-line-height * 2;
-    
-    h2 {
-	margin: 0;
-	color: $white;
-	font-size: 40px;
-	font-weight: bold;
-    }
-    
-    #getting-started-options {
-	
-	.getting-started-option {
-	    padding: $base-line-height;
-	}
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	h3 {
-	    text-align: center;
-	    margin-top: 0;
-	    font-size: 25px;
-	    font-weight: normal;
-	    color: $white;
-	}
-    }
-}
-
-#testimonials-container {
-    font-family: arial;
-    padding: $base-line-height $base-line-height * 2;
-    h2 {
-	color: $black;
-	font-size: 40px;
-	font-weight: bold;
-	margin: 0;
-    }
-
-    #testimonials {
-	display: flex;
-	align-items: flex-top;
-
-	.testimonial {
-	    flex: 1;
-	    padding: $base-line-height;
-	    img {
-		object-fit: cover;
-		border-radius: $base-line-height *.5;
-		box-shadow: 0px 3px 2px $gray;
-	    }
-	    h3 {
-		margin: ($base-line-height * 0.25) 0px;
-	    }
-	    p {
-		margin: ($base-line-height * 0.5) 0px;
-	    }
-	}
-    }
-}
-
 .item-container {
     display: flex;
     align-items: top;
@@ -1177,13 +1076,5 @@ footer {
 	padding: $base-line-height;
     }
 }
-
-.actions-box {
-    background: $gray2;
-    border: solid thin $black;
-    margin: $base-line-height;
-    padding: $base-line-height * 0.5;
-}
-
 /* @end */
 

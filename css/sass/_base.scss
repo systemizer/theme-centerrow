@@ -3,6 +3,12 @@
 $base-font-size: 18px;
 $base-line-height: 24px;
 
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700';
+
+$base-font-header:"Montserrat";
+$base-font-paragraph: "Open Sans";
+
 //Colors
 
 $red: #700409;
