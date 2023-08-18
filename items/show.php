@@ -51,10 +51,14 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
             <p>Not all documents in the archive have been digitized. If the download is not available, then you can
                 still inquire in the physical location of the document. See below for instructions on how to access the
                 physical document.</p>
+            <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
         </div>
 
     </div>
     <div class="item-document">
+        <?php if ($itemFiles): ?>
+            <?php echo lightGallery($itemFiles); ?>
+        <?php endif; ?>
         <div class="actions-box">
             <ul>
                 <li>
@@ -71,9 +75,7 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
                 </li>
             </ul>
         </div>
-        <?php if ($itemFiles): ?>
-            <?php echo lightGallery($itemFiles); ?>
-        <?php endif; ?>
+
     </div>
 </div>
 
@@ -86,7 +88,7 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
     <?php echo lightgallery_other_files($itemFiles); ?>
 <?php endif; ?>
 
-<?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+
 
 <nav>
     <ul class="item-pagination navigation">
