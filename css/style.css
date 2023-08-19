@@ -1416,13 +1416,14 @@ nav ul {
 @media screen {
   #featured .featured-meta {
     position: absolute;
-    top: 50%;
-    left: 20%;
-    right: 20%;
+    top: 75%;
+    left: 50%;
+    right: 0%;
     transform: translateY(-50%);
-    border: 1px solid #fff;
+    border: 1px solid #dedede;
     padding: 24px;
-    color: #fff;
+    color: #1c1d23;
+    background-color: rgba(230, 230, 230, 0.6);
     text-align: center;
   }
   #featured .featured-meta:after {
@@ -1432,7 +1433,7 @@ nav ul {
     bottom: -24px;
     right: -24px;
     left: -24px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(200, 200, 200, 0.3);
     z-index: -1;
   }
 }
@@ -1446,7 +1447,7 @@ nav ul {
 }
 @media screen {
   #featured .featured-meta h3 a {
-    color: #fff;
+    color: #1c1d23;
   }
   #featured .featured-meta h3 a:hover {
     text-decoration: none;

@@ -905,13 +905,14 @@ footer {
 
 #featured .featured-meta {
     position: absolute;
-    top: 50%;
-    left: 20%;
-    right: 20%;
+    top: 75%;
+    left: 50%;
+    right: 0%;
     transform: translateY(-50%);
-    border: 1px solid #fff;
+    border: 1px solid $gray;
     padding: $base-line-height;
-    color: #fff;
+    color: $black;
+    background-color: rgba(230, 230, 230, .6);
     text-align: center;
 
     &:after {
@@ -921,7 +922,7 @@ footer {
         bottom: (-$base-line-height);
         right: (-$base-line-height);
         left: (-$base-line-height);
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(200,200,200,.3);
         z-index: -1;
     }
 }
@@ -934,7 +935,7 @@ footer {
 }
 
 #featured .featured-meta h3 a {
-    color: #fff;
+    color: $black;
 
     &:hover {
         text-decoration: none;
