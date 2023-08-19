@@ -700,7 +700,6 @@ input[type=submit] {
 nav ul {
     list-style: none;
     padding: 0;
-    font-family: avenir;
   }
 
   .item-pagination.navigation {
@@ -1105,7 +1104,6 @@ nav ul {
   }
   footer #footer-content a {
     color: #FFFFFF;
-    font-family: avenir;
   }
 }
 @media screen {

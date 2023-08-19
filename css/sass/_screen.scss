@@ -222,7 +222,6 @@ input[type="submit"] {
 nav .navigation,
 nav ul {
     @include de-list;
-    font-family: avenir;
 }
 
 .item-pagination.navigation {
@@ -615,7 +614,6 @@ footer {
     #footer-content {
 	a {
 	    color: $white;
-	    font-family: avenir;
 	}
     }
 }
