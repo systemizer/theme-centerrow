@@ -422,7 +422,7 @@ textarea {
 }
 
 .homepage-block {
-  margin: 48px 0;
+  padding: 48px 0;
   font-family: "Open Sans";
 }
 .homepage-block h1, .homepage-block h2, .homepage-block h3, .homepage-block h4, .homepage-block h5, .homepage-block h6 {
