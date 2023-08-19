@@ -26,7 +26,7 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
             </div>
         </div>
         <!-- If the item belongs to a collection, the following creates a link to that collection. -->
-        <?php if (metadata('item', 'Collection Name')): ?>
+        <?php if (metadata('item', 'Collection Name')) : ?>
             <div id="collection" class="element">
                 <h3>
                     <?php echo __('Collection'); ?>
@@ -36,7 +36,7 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
                 </div>
             </div>
         <?php endif; ?>
-        <?php if (metadata('item', 'has tags')): ?>
+        <?php if (metadata('item', 'has tags')) : ?>
             <div id="item-tags" class="element">
                 <h3>
                     <?php echo __('Tags'); ?>
@@ -48,6 +48,22 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
         <?php endif; ?>
         <div class="accessing-document-section">
             <h2>Physical Location of the Document</h2>
+            <div id="ispartof" class="element">
+                <h3>
+                    <?php echo __('Is Part Of'); ?>
+                </h3>
+                <div class="element-text">
+                    <?php echo metadata('item', array('Dublin Core', 'Is Part Of'), array('no_escape' => true)); ?>
+                </div>
+            </div>
+            <div id="source" class="element">
+                <h3>
+                    <?php echo __('Source'); ?>
+                </h3>
+                <div class="element-text">
+                    <?php echo metadata('item', array('Dublin Core', 'Source'), array('no_escape' => true)); ?>
+                </div>
+            </div>
             <p>Not all documents in the archive have been digitized. If the download is not available, then you can
                 still inquire in the physical location of the document. See below for instructions on how to access the
                 physical document.</p>
@@ -56,16 +72,16 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
 
     </div>
     <div class="item-document">
-        <?php if ($itemFiles): ?>
+        <?php if ($itemFiles) : ?>
             <?php echo lightGallery($itemFiles); ?>
         <?php endif; ?>
         <div class="actions-box">
             <ul>
                 <li>
                     <b>Download: </b>
-                    <?php if ($itemFiles): ?>
+                    <?php if ($itemFiles) : ?>
                         <b><a target="_blank" href="<?php echo metadata($itemFiles[0], 'uri') ?>">Click to Download</a></b>
-                    <?php else: ?>
+                    <?php else : ?>
                         <i>download not available</i>
                     <?php endif; ?>
                 </li>
@@ -84,7 +100,7 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
 <!-- The following prints a list of all tags associated with the item -->
 
 
-<?php if ((get_theme_option('other_media') == 1) && $itemFiles): ?>
+<?php if ((get_theme_option('other_media') == 1) && $itemFiles) : ?>
     <?php echo lightgallery_other_files($itemFiles); ?>
 <?php endif; ?>
 
