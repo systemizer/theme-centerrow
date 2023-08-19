@@ -499,7 +499,7 @@ textarea {
   }
 
   html {
-    font: 18px/24px "Open Sans", serif;
+    font: 17px/24px "Open Sans", serif;
     color: #444;
   }
 
@@ -517,14 +517,14 @@ textarea {
 
   h1 {
     text-align: center;
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 24px;
     line-height: 48px;
     font-weight: normal;
   }
 
   h2 {
-    font-size: 27px;
+    font-size: 25.5px;
     margin-bottom: 24px;
     line-height: 48px;
     font-weight: normal;
@@ -607,7 +607,7 @@ input[type=number],
 input[type=month] {
     appearance: none;
     border: 1px solid;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
   }
 
@@ -618,7 +618,7 @@ input[type=month] {
     background: #fff url("../../../admin/themes/default/images/dropdown-arrow.png") no-repeat center right;
     border: 1px solid;
     border-radius: 2px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     color: #676767;
     padding-right: 48px;
@@ -673,7 +673,7 @@ input[type=submit] {
   }
 
   #submit_search_advanced {
-    font-size: 22.5px;
+    font-size: 21.25px;
     padding: 6px;
   }
 
@@ -778,12 +778,12 @@ nav ul {
   }
 
   header nav a {
-    font-size: 22.5px;
+    font-size: 21.25px;
     font-weight: 700;
   }
 
   #site-title {
-    font-size: 27px;
+    font-size: 25.5px;
     text-transform: uppercase;
     margin-right: 48px;
     letter-spacing: 0.125em;
@@ -1005,7 +1005,7 @@ nav ul {
     background-color: #fff;
   }
   .sub-nav a {
-    font-size: 15.75px;
+    font-size: 14.875px;
   }
   .sub-nav.first {
     max-width: 100%;
@@ -1124,7 +1124,7 @@ nav ul {
   #bottom-nav li {
     display: inline-block;
     padding: 0em 1em 0em 1em;
-    font-size: 15.75px;
+    font-size: 14.875px;
     border-right: solid thin #FFFFFF;
   }
   #bottom-nav li:last-child {
@@ -1197,7 +1197,7 @@ nav ul {
 #collection-items .hentry {
     padding: 24px;
     width: 25%;
-    font-size: 15.75px;
+    font-size: 14.875px;
   }
 }
 @media screen {
@@ -1208,7 +1208,7 @@ nav ul {
 @media screen {
   .browse .hentry h2,
 #collection-items .hentry h2 {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     margin-bottom: 0;
   }
@@ -1249,9 +1249,9 @@ nav ul {
 #item-filters ul li {
     display: inline-block;
     border-color: #dedede;
-    font-size: 22.5px;
+    font-size: 21.25px;
     border: 1px solid #dedede;
-    padding: 3.5px;
+    padding: 3.25px;
     margin: 0 0.5em;
   }
   #search-filters ul ul,
@@ -1284,28 +1284,28 @@ nav ul {
     margin: 0 12px 12px 0;
   }
   .hTagcloud ul .vvvvvvvv-popular {
-    font-size: 36px;
+    font-size: 34px;
   }
   .hTagcloud ul .vvvvvvv-popular {
-    font-size: 33.75px;
+    font-size: 31.875px;
   }
   .hTagcloud ul .vvvvvv-popular {
-    font-size: 31.5px;
+    font-size: 29.75px;
   }
   .hTagcloud ul .vvvvv-popular {
-    font-size: 29.25px;
+    font-size: 27.625px;
   }
   .hTagcloud ul .vvvv-popular {
-    font-size: 27px;
+    font-size: 25.5px;
   }
   .hTagcloud ul .vvv-popular {
-    font-size: 24.75px;
+    font-size: 23.375px;
   }
   .hTagcloud ul .vv-popular {
-    font-size: 22.5px;
+    font-size: 21.25px;
   }
   .hTagcloud ul .v-popular {
-    font-size: 20.25px;
+    font-size: 19.125px;
   }
 }
 @media screen {
@@ -1381,7 +1381,7 @@ nav ul {
   .collections.show .view-items-link {
     width: 100%;
     text-align: center;
-    font-size: 20.25px;
+    font-size: 19.125px;
     border-top: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
     padding: 11px 0;
@@ -1438,7 +1438,7 @@ nav ul {
 }
 @media screen {
   #featured .featured-meta h3 {
-    font-size: 31.5px;
+    font-size: 29.75px;
     line-height: 36px;
     margin: 0;
     font-weight: normal;
@@ -1454,7 +1454,7 @@ nav ul {
 }
 @media screen {
   #featured .featured-meta p {
-    font-size: 15.75px;
+    font-size: 14.875px;
     margin: 0;
   }
 }
@@ -1477,9 +1477,9 @@ nav ul {
 @media screen {
   #featured .slick-dots button {
     background-color: #dedede;
-    width: 13.5px;
-    height: 13.5px;
-    border-radius: 18px;
+    width: 12.75px;
+    height: 12.75px;
+    border-radius: 17px;
     text-indent: -9999px;
     border: 0;
     cursor: pointer;
@@ -1549,7 +1549,7 @@ nav ul {
 }
 @media screen {
   #exhibit-pages a {
-    font-size: 15.75px;
+    font-size: 14.875px;
     color: #676767;
   }
 }
@@ -1765,7 +1765,7 @@ footer {
   /* @end */
   /* @group ----- Search ----- */
   #search-filters ul li {
-    font-size: 15.75px;
+    font-size: 14.875px;
     margin: 0 3px 12px;
   }
 
