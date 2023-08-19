@@ -484,6 +484,15 @@ textarea {
   padding: 12px;
 }
 
+.block-wrap {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#home #wrap {
+  max-width: 100%;
+}
+
 @media screen {
   * {
     box-sizing: border-box;

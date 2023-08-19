@@ -47,6 +47,7 @@
     <div id="wrap">
 
         <header role="banner">
+	    <div class="block-wrap">
 
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
@@ -67,6 +68,7 @@
 	    </div>
 
             <?php echo theme_header_image(); ?>
+	    </div>
 
         </header>
 

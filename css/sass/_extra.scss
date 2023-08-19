@@ -87,3 +87,12 @@
     margin: $base-line-height;
     padding: $base-line-height * 0.5;
 }
+
+.block-wrap {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#home #wrap {
+    max-width: 100%;
+}
