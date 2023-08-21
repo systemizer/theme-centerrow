@@ -3,20 +3,16 @@
 }
 
 html {
-    font: #{$base-font-size}/#{$base-line-height} "Crimson Text", serif;
+    font: #{$base-font-size}/#{$base-line-height} $base-font-paragraph, serif;
     color: #444;
 }
 
 a {
-    color: $red;
-    text-decoration: underline;
-
-    &:hover {
-        text-decoration: double underline;
-    }
+    color: $black;
+    text-decoration: none;
 
     &:focus {
-        border: solid 1px $red;
+        border: solid 1px $black;
     }
 }
 
@@ -60,7 +56,7 @@ img {image-orientation:from-image;}
     max-width: 1100px;
     margin: auto;
     position: relative;
-    padding: 0 $base-line-height;
+    padding: 0;
 }
 
 /* @end */
@@ -251,7 +247,7 @@ nav ul {
     padding-bottom: (.5 * $base-line-height);
 
     &.active a {
-        color: $red;
+        color: $black;
     }
 }
 
@@ -277,15 +273,20 @@ nav ul {
     }
 }
 
+header #top-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px $black;
+}
+
 header nav .navigation {
     list-style-type: none;
     padding: ((.25 * $base-line-height) - 1px) 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid $gray;
-    border-width: 1px 0;
-    margin: $base-line-height 0;
+    margin: $base-line-height $base-line-height;
 }
 
 header nav li {
@@ -294,14 +295,15 @@ header nav li {
 }
 
 header nav a {
-    font-size: .875 * $base-font-size;
+    font-size: 1.25 * $base-font-size;
+    font-weight: 700;
 }
 
 #site-title {
     font-size: 1.5 * $base-font-size;
     text-transform: uppercase;
+    margin-right: 2 * $base-line-height;
     letter-spacing: .125em;
-    margin: (2 * $base-line-height) 0 0;
 }
 
 #site-title a {
@@ -465,7 +467,6 @@ header nav ul {
     list-style: none;
     display: inline-block;
     padding: 0;
-    margin: 0;
     height: 100%;
 }
 
@@ -476,6 +477,11 @@ header nav ul {
     padding: (.25 * $base-line-height) (.5 * $base-line-height);
     margin: 0 0 -1px 0;
     border: 1px solid transparent;
+
+    /* Custom Styles */
+    color: $black;
+    text-decoration: none;
+    /* End Custom Styles */
 }
 
 /* focus/open states of first descendant link within a top level 
@@ -503,18 +509,6 @@ header nav > ul > li > .sub-nav-toggle {
     z-index: 1;
 }
 
-.nav-menu > .nav-item > [role="button"]:after {
-    content: "\00A0\00A0\f0da";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    display: inline-block;
-    width: $base-line-height;
-}
-
-.nav-menu > .nav-item > [aria-expanded="true"]:after {
-    content: "\00A0\00A0\f0d7";
-}
-
 a.parent {
     font-weight: bold;
 }
@@ -530,16 +524,16 @@ a.parent:after {
     border: 1px solid #dedede;
     border-width: 1px 0;
     background-color: #fff;
+
+    a {
+	font-size: .875 * $base-font-size;
+    }
     
     &.first {
         max-width: 100%;
         margin: 0 auto;
         padding: 0 (.5 * $base-line-height);
     }
-}
-
-.first.open.sub-nav > ul > li > ul > li {
-    width: 25%;
 }
 
 .first.open.sub-nav ul ul ul {
@@ -558,6 +552,7 @@ a.parent:after {
 .open.sub-nav ul {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     left: 0;
     right: 0;
     z-index: 999;
@@ -588,18 +583,9 @@ a.parent:after {
     }
 
     li a:not(.parent) {
-        padding-left: $base-line-height;
-        text-indent: -$base-line-height;
         display: inline-block;
     }
 
-    li a:not(.parent):before {
-        content: "\25C6";
-        display: inline-block;
-        width: $base-line-height;
-        margin-right: (-.125 * $base-line-height);
-        text-indent: 0;
-    }
 }
 
 .sub-nav .sub-nav-toggle {
@@ -620,14 +606,32 @@ a.parent:after {
 /* @group ----- Footer ----- */
 
 footer {
+    padding: (.25 * $base-line-height);
+    background-color: $black2;
     margin-top: (2 * $base-line-height);
     clear: both;
+
+    #footer-content {
+	a {
+	    color: $white;
+	}
+    }
 }
 
+#bottom-nav ul {
+    text-align: center;
+}
 #bottom-nav li {
     display: inline-block;
-    margin-right: 1em;
+    padding: 0em 1em 0em 1em;
+    
     font-size: .875 * $base-font-size;
+
+    border-right: solid thin $white;
+
+    &:last-child {
+	border-right: none;
+    }
 }
 
 /* @end */
@@ -653,7 +657,7 @@ footer {
     }
 
     .sorting a {
-        color: $red;
+        color: $black;
     }
 }
 
@@ -664,6 +668,18 @@ footer {
 
 #sort-links {
     float: right;
+}
+
+.browse .record-container {
+    display: flex;
+    width: 100%;
+}
+.browse .record-container .facets {
+    width: 25%;
+}
+
+.browse .records {
+    flex: 1;
 }
 
 .browse .records,
@@ -889,13 +905,14 @@ footer {
 
 #featured .featured-meta {
     position: absolute;
-    top: 50%;
-    left: 20%;
-    right: 20%;
+    top: 75%;
+    left: 50%;
+    right: 0%;
     transform: translateY(-50%);
-    border: 1px solid #fff;
+    border: 1px solid $gray;
     padding: $base-line-height;
-    color: #fff;
+    color: $black;
+    background-color: rgba(230, 230, 230, .6);
     text-align: center;
 
     &:after {
@@ -905,7 +922,7 @@ footer {
         bottom: (-$base-line-height);
         right: (-$base-line-height);
         left: (-$base-line-height);
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(200,200,200,.3);
         z-index: -1;
     }
 }
@@ -918,7 +935,7 @@ footer {
 }
 
 #featured .featured-meta h3 a {
-    color: #fff;
+    color: $black;
 
     &:hover {
         text-decoration: none;
@@ -1019,7 +1036,7 @@ footer {
 }
 
 #exhibit-pages .current a {
-    color: $red;
+    color: $black;
 }
 
 #exhibit-pages > ul > li:not(:last-of-type) {
@@ -1044,4 +1061,19 @@ footer {
     margin-bottom: 0;
 }
 
+.item-container {
+    display: flex;
+    align-items: top;
+
+    .item-metadata {
+	flex: 1;
+	padding: $base-line-height;
+    }
+
+    .item-document {
+	flex: 1;
+	padding: $base-line-height;
+    }
+}
 /* @end */
+
