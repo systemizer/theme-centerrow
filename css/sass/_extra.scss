@@ -70,6 +70,17 @@
 
     .getting-started-option {
 	flex: 1;
+	text-align: center;
+
+	.getting-started-option-image {
+	    height: 200px;
+	    overflow: hidden;
+	    text-align: center;
+
+	    img {
+		height: 200px;
+	    }
+	}
     }
 }
 

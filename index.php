@@ -71,24 +71,30 @@ queue_js_string('
     <div class="flex">
       <div class="getting-started-option">
         <a href="/using-collections">
-          <img src="http://fwwcpdigitalcollection.org/files/original/8717104c1b72f71fc8e324ab101f3ed3.png"
-            width="300px" />
+          <div class="getting-started-option-image">
+            <img src="http://fwwcpdigitalcollection.org/files/static/UsingCollections.png" />
+          </div>
+          <h4>Using the Collections</h4>
         </a>
-        <h4>Using the Collections</h4>
+
       </div>
       <div class="getting-started-option">
         <a href="/reading-guides">
-          <img src="http://fwwcpdigitalcollection.org/files/original/0ae7c530967cc9078390cac6fdb4dcc8.png"
-            width="300px" />
+          <div class="getting-started-option-image">
+            <img src="http://fwwcpdigitalcollection.org/files/static/ReadingGuides.png" />
+          </div>
+          <h4>Reading Guides</h4>
         </a>
-        <h4>Reading Guides</h4>
+
       </div>
       <div class="getting-started-option">
         <a href="/history">
-          <img src="http://fwwcpdigitalcollection.org/files/original/4248af7c7e7e109b6a10c8a25b1425f5.jpg"
-            width="300px" />
+          <div class="getting-started-option-image">
+            <img src="http://fwwcpdigitalcollection.org/files/static/FWWCPhistory.png" />
+          </div>
+          <h4>FWWCP History</h4>
         </a>
-        <h4>FWWCP History</h4>
+
       </div>
     </div>
   </div>
