@@ -50,7 +50,7 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
             <h2>Physical Location of the Document</h2>
             <div id="ispartof" class="element">
                 <h3>
-                    <?php echo __('Is Part Of'); ?>
+                    <?php echo __('Item Location'); ?>
                 </h3>
                 <div class="element-text">
                     <?php echo metadata('item', array('Dublin Core', 'Is Part Of'), array('no_escape' => true)); ?>
@@ -64,9 +64,7 @@ echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bod
                     <?php echo metadata('item', array('Dublin Core', 'Source'), array('no_escape' => true)); ?>
                 </div>
             </div>
-            <p>Not all documents in the archive have been digitized. If the download is not available, then you can
-                still inquire in the physical location of the document. See below for instructions on how to access the
-                physical document.</p>
+            <p>Not all documents in the archive have been digitized. If the download is not available, please inquire about accessing the item, which is housed at the Trades Union Congress Library's Special Collections in London, England.</p>
             <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
         </div>
 
